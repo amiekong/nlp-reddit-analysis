@@ -16,8 +16,8 @@ Each notebook under the /experiments directory includes experiments for Linguist
 3. Domestic Violence Subreddit Feature Analysis and LDA Topic Modeling.ipynb
 4. PTSD Subreddit Feature Analysis and LDA Topic Modeling.ipynb
 
-> reddit_data directory
->> includes .csv files for subreddit data sets that were extracted using pushshift.py code
+> reddit_data/
+>> directory includes .csv files for subreddit data sets that were extracted using pushshift.py code
 
 ### Subreddit Analysis Using LIWC Feature Extraction
 
