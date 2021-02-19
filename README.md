@@ -3,7 +3,7 @@
 #### Author: Amie Kong
 
 ## Subreddit Data Download & Extraction:
-pushshift.py
+> pushshift.py
 
 Datasets were extracted using the Pushshift API  (pushshift.io) from 4 different subreddits (r/abuse, r/domesticViolence, r/ptsd, r/CSEducation) during different time frames: pre-pandemic (November 1, 2018 to November 1, 2019), mid-pandemic (January 15, 2020 to May 1, 2020), and a control time frame to compare the quantity of submissions before and during the pandemic (January 15, 2019 to May 1, 2019). Another dataset was created as a separate experimental group: (r/covid) in a shortened time frame of January 15, 2020 to April 1, 2020 to account for the influx of post submissions and it made it easier to handle the data. Only posts including a title and a body were included to exclude posts with just images. The datasets were then saved as CSV files and distinguished by the different time frames and subreddit. The number of submissions for each dataset range from 792 to 8682 due to the popularity of certain subreddit groups (e.g. r/ptsd and r/home) that possess more posts overall. Dropping and querying of the datasets was necessary to normalize the data into the following columns: Post Id, Title, Body, Author, Publish Date, and Total No. of Comments. Using the NLTK and redditclean package, the “Body” column text of each submission post was further cleaned and preprocessed by removing English stop-words, punctuation, and url links.
 
@@ -16,7 +16,7 @@ Each notebook under the /experiments directory includes experiments for Linguist
 3. Domestic Violence Subreddit Feature Analysis and LDA Topic Modeling.ipynb
 4. PTSD Subreddit Feature Analysis and LDA Topic Modeling.ipynb
 
-reddit_data directory - includes .csv files for subreddit data sets that were extracted using pushshift.py code
+> reddit_data directory - includes .csv files for subreddit data sets that were extracted using pushshift.py code
 
 ### Subreddit Analysis Using LIWC Feature Extraction
 
