@@ -23,7 +23,7 @@ Each notebook under the /experiments directory includes experiments for Linguist
 
 Linguistic Inquiry Word Count (LIWC) features from the body of each subreddit was extracted to perform an analysis on the dominant traits present in each subreddit (Pennebaker). 92 features were extracted using the LIWC software which includes the general LIWC features such as word count, analytic, cloud, tone, pronoun, as well as other features that detect other scenarios such as anger, sad, social (all LIWC features extracted in the following order):
 
-'WC', 'Analytic', 'Clout', 'Authentic', 'Tone', 'WPS', 'Sixltr', 'Dic',
+> 'WC', 'Analytic', 'Clout', 'Authentic', 'Tone', 'WPS', 'Sixltr', 'Dic',
        'function', 'pronoun', 'ppron', 'i', 'we', 'you', 'shehe', 'they',
        'ipron', 'article', 'prep', 'auxverb', 'adverb', 'conj', 'negate',
        'verb', 'adj', 'compare', 'interrog', 'number', 'quant', 'affect',
