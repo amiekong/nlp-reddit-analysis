@@ -54,15 +54,25 @@ Valence Aware Dictionary and Sentiment Reasoner (VADER) is a “a lexicon and ru
 <img src="https://github.com/amiekong/nlp-reddit-analysis/blob/master/images/vader_results.png" width="400" height="800">
 
 
-### Latent Dirichlet Allocation Topic Modeling on Subreddits
+## Latent Dirichlet Allocation Topic Modeling on Subreddits
 
 A probabilistic modeling approach of topic modeling, LDA (Latent Dirichlet Allocation), was performed on each data set to detect the top underlying topics and if there exists any noticeable changes for each subreddit prepandemic vs midpandemic [1].
 
 LDA was used to detect any topic changes in the extracted pre-pandemic subreddit submissions vs the mid-pandemic subreddit submissions. A bag-of-words corpus was created, which was used to create an LDA model and 5 topics were created. Models were also generated multiple times with different numbers of words for each topic to address the consistency of topics. Using the scikit package, a manually chosen LDA model with 5 topics was then applied to the r/abuse subreddit to assess the distribution of topics, allowing for comparison between the distribution of subreddit submissions pre-pandemic vs mid-pandemic. Furthermore, the gensim package was installed to generate the interactive pyLDAvis visualization maps.
 
-
-
-
-
 ### Project Report:
 "Kong_Amie_Project_Report.pdf"
+
+### References
+
+[1] Pennebaker JW, Booth RJ, Boyd RL, Francis ME. LIWC 2015 Operator’s Manual. Austin, TX: Pennebaker Conglomerates Inc; 2015.
+https://liwc.wpengine.com/
+[2] Tomar, A. (2019, July 25). Topic modeling using Latent Dirichlet Allocation(LDA) and Gibbs Sampling explained! Retrieved November 21, 2020, from https://medium.com/analytics-vidhya/topic-modeling-using-lda-and-gibbs-sampling-explained-49d49b3d1045
+
+[3] Low, D. M., Rumker, L., Torous, J., Cecchi, G., Ghosh, S. S., & Talkar, T. (2020). Natural Language Processing Reveals Vulnerable Mental Health Support Groups and Heightened Health Anxiety on Reddit During COVID-19: Observational Study. Journal of medical Internet research, 22(10), e22635.
+
+[4]Park, A., Conway, M., & Chen, A. T. (2018). Examining Thematic Similarity, Difference, and Membership in Three Online Mental Health Communities from Reddit: A Text Mining and Visualization Approach. Computers in human behavior, 78, 98–112. https://doi.org/10.1016/j.chb.2017.09.001
+
+[5]Pavalanathan, U., & De Choudhury, M. (2015). Identity Management and Mental Health Discourse in Social Media. Proceedings of the ... International World-Wide Web Conference. International WWW Conference, 2015(Companion), 315–321. https://doi.org/10.1145/2740908.2743049
+
+[6]https://github.com/kapadias/mediumposts/blob/master/nlp/published_notebooks/Introduction%20to%20Topic%20Modeling.ipynb
