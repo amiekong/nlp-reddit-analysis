@@ -50,13 +50,8 @@ For the abuse subreddit, the top processes that generalize this data set are soc
 
 Valence Aware Dictionary and Sentiment Reasoner (VADER) is a “a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media.” It measures the strength and direction of sentiment across an entire text and the algorithm adjusts for negations and booster words, returning the proportion of the text that is negative, positive, neutral, and a combined score. VADER scores were extracted for each subreddit by importing SentimentAnalyzer from the NLTK package. The polarity scores were concatenated onto the data frame and an analysis on the compound scores were done to examine the positive, neutral, and negative posts of each subreddit.
 
-Compound scores generated from the sentiment values for our control groups, CS Education and PTSD subreddits, showed a contrast in sentiment; with CS Education posts primarily falling under neutral to positive before and during the pandemic and PTSD posts falling under the negative range for both time periods.
+![alt text](https://github.com/amiekong/nlp-reddit-analysis/blob/master/images/vader_results.png)
 
-Compound scores for the abuse subreddit group consist primarily of posts falling under negative sentiment; however, there was a 8% increase in the percentage of posts falling under neutral during the pandemic. A separate control data set, including posts from January 1, 2018 to May 15, 2018 of the r/abuse subreddit, was extracted a few months before the pre-pandemic period  to minimize this increase as being due to chance.
-
-For the domestic violence subreddit, a 12% drop in the number of neutral posts during the pandemic and a 9% increase in the number of negative posts were observed. When compared with the control dataset, including posts from January 1, 2018 to May 15, 2018 of the r/domesticViolence subreddit, the mid-pandemic dataset closely resembled the statistics of the control dataset; hence, suggesting that it was due to chance.
-
-INCLUDE TABLES
 
 ### Latent Dirichlet Allocation Topic Modeling on Subreddits
 
