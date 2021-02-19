@@ -41,8 +41,8 @@ The psychological processes summed by the 9 subprocesses (affective, social, cog
 
 A change in the psychological processes categories of cognitive processes and relativity existed for the CS Education subreddit, which is the control group of this study. During the pandemic, the frequency of words that fall under the cognitive processes category increased by 4% and relativity increased by 2%. It also has a higher portion of language classified under “drives” (summed up by categories: achievement, power, and reward scores); therefore, we can deduce that this subreddit group primarily includes posts that relate to drive. As for the other control dataset of the PTSD subreddit, all areas of psychological processes remain consistent before and during the pandemic with the top two processes that generalize the PTSD subreddit being cognitive processes (e.g. insight, causation, discrepancy, tentative, certainty) and relativity (e.g. motion and space).
 
-![alt text](https://github.com/amiekong/nlp-reddit-analysis/blob/master/images/abuse_liwc_mid.png)
-![alt text](https://github.com/amiekong/nlp-reddit-analysis/blob/master/images/abuse_liwc_pre.png)
+![alt text](https://github.com/amiekong/nlp-reddit-analysis/blob/master/images/abuse_liwc_mid.png =250x250)
+![alt text](https://github.com/amiekong/nlp-reddit-analysis/blob/master/images/abuse_liwc_pre.png =250x250)
 
 For the abuse subreddit, the top processes that generalize this data set are social, cognitive, and relativity; however, no change in frequency distribution of the categories was detected in pre-pandemic vs the mid-pandemic dataset. Similarly, the top processes that generalize the domestic violence subreddits are social, cognitive, and relativity, with no change detected in the frequency distribution of the psychological processes in the pre-pandemic vs the mid-pandemic dataset.
 
@@ -50,7 +50,7 @@ For the abuse subreddit, the top processes that generalize this data set are soc
 
 Valence Aware Dictionary and Sentiment Reasoner (VADER) is a “a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media.” It measures the strength and direction of sentiment across an entire text and the algorithm adjusts for negations and booster words, returning the proportion of the text that is negative, positive, neutral, and a combined score. VADER scores were extracted for each subreddit by importing SentimentAnalyzer from the NLTK package. The polarity scores were concatenated onto the data frame and an analysis on the compound scores were done to examine the positive, neutral, and negative posts of each subreddit.
 
-![alt text](https://github.com/amiekong/nlp-reddit-analysis/blob/master/images/vader_results.png)
+![alt text](https://github.com/amiekong/nlp-reddit-analysis/blob/master/images/vader_results.png =250x250)
 
 
 ### Latent Dirichlet Allocation Topic Modeling on Subreddits
