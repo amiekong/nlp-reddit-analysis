@@ -51,7 +51,7 @@ For the abuse subreddit, the top processes that generalize this data set are soc
 
 Valence Aware Dictionary and Sentiment Reasoner (VADER) is a “a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media.” It measures the strength and direction of sentiment across an entire text and the algorithm adjusts for negations and booster words, returning the proportion of the text that is negative, positive, neutral, and a combined score. VADER scores were extracted for each subreddit by importing SentimentAnalyzer from the NLTK package. The polarity scores were concatenated onto the data frame and an analysis on the compound scores were done to examine the positive, neutral, and negative posts of each subreddit.
 
-<img src="https://github.com/amiekong/nlp-reddit-analysis/blob/master/images/vader_results.png" width="400" height="850">
+<img src="https://github.com/amiekong/nlp-reddit-analysis/blob/master/images/vader_results.png" width="400" height="800">
 
 
 ### Latent Dirichlet Allocation Topic Modeling on Subreddits
