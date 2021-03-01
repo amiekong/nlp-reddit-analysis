@@ -56,7 +56,7 @@ Valence Aware Dictionary and Sentiment Reasoner (VADER) is a “a lexicon and ru
 
 ## Latent Dirichlet Allocation Topic Modeling on Subreddits
 
-A probabilistic modeling approach of topic modeling, LDA (Latent Dirichlet Allocation), was performed on each data set to detect the top underlying topics and if there exists any noticeable changes for each subreddit prepandemic vs midpandemic [1].
+A probabilistic modeling approach of topic modeling, LDA (Latent Dirichlet Allocation), was performed on each data set to detect the top underlying topics and if there exists any noticeable changes for each subreddit prepandemic vs midpandemic.
 
 LDA was used to detect any topic changes in the extracted pre-pandemic subreddit submissions vs the mid-pandemic subreddit submissions. A bag-of-words corpus was created, which was used to create an LDA model and 5 topics were created. Models were also generated multiple times with different numbers of words for each topic to address the consistency of topics. Using the scikit package, a manually chosen LDA model with 5 topics was then applied to the r/abuse subreddit to assess the distribution of topics, allowing for comparison between the distribution of subreddit submissions pre-pandemic vs mid-pandemic. Furthermore, the gensim package was installed to generate the interactive pyLDAvis visualization maps.
 
