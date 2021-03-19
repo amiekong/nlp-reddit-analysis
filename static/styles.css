@@ -1,0 +1,321 @@
+// Start | for demo
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,300';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.min.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:300,700';
+
+body {
+    width: 100%;
+    min-height: 900px;
+    margin: 3em auto;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7cac9+0,92a8d1+100 */
+    background: rgb(247, 202, 201);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(247, 202, 201, 1) 0%, rgba(146, 168, 209, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(247, 202, 201, 1) 0%, rgba(146, 168, 209, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(247, 202, 201, 1) 0%, rgba(146, 168, 209, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* IE6-9 fallback on horizontal gradient */
+
+    font-family: 'Roboto Mono';
+    letter-spacing: 1px;
+}
+
+h1 {
+    i {
+        position: relative;
+        font-size: 70px;
+    }
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 3em;
+    letter-spacing: 0px;
+    text-shadow: 1px 1px rgba(0,
+    0,
+    0,
+    0.02),
+    2px 2px rgba(0,
+    0,
+    0,
+    0.02),
+    3px 3px rgba(0,
+    0,
+    0,
+    0.02),
+    4px 4px rgba(0,
+    0,
+    0,
+    0.02),
+    5px 5px rgba(0,
+    0,
+    0,
+    0.02),
+    6px 6px rgba(0,
+    0,
+    0,
+    0.02),
+    7px 7px rgba(0,
+    0,
+    0,
+    0.02);
+}
+
+p {
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 2em;
+    line-height: 30px;
+    img {
+        position: relative;
+        top: 8px;
+        right: 10px;
+    }
+} // End | for demo
+// Pure css Select
+.select {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    width: 330px;
+    height: 100%;
+    border-bottom: 0px;
+    border-radius: 3px;
+    font-size: 12px;
+    box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, .5);
+    >i.toggle {
+        position: absolute;
+        z-index: 4;
+        right: 1.5em;
+        top: 1.6em;
+        color: #ccc
+    }
+    .title,
+    .placeholder {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 1.5em 2em;
+        background: rgba(255, 255, 255, 1);
+        border-top: 1px solid rgba(0, 0, 0, .05);
+        cursor: pointer;
+    }
+    &>input {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: block;
+        opacity: 0;
+        cursor: pointer;
+        &:checked {
+            ~i.toggle.icon-arrow-down {
+                display: none;
+            }
+            ~i.toggle.icon-arrow-up {
+                display: block;
+            }
+            div.options label.option .title {
+                display: none!important;
+            }
+        }
+        &:not(:checked) {
+            z-index: 4;
+            ~label.option {
+                >span.title {
+                    display: none;
+                }
+            }
+            ~i.toggle.icon-arrow-up {
+                display: none;
+            }
+            ~i.toggle.icon-arrow-down {
+                display: block;
+            }
+        }
+        &:disabled {
+            cursor: no-drop;
+        }
+    }
+    &>span.placeholder {
+        position: relative;
+        z-index: 0;
+        display: inline-block;
+        width: 100%;
+        color: #999;
+        border-top: 0px;
+    }
+    label.option {
+        display: block;
+        overflow: hidden;
+        z-index: 1;
+        width: 100%;
+        transition: all 1s ease-out;
+        span.title {
+            position: relative;
+            z-index: 2;
+            transition: background .3s ease-out;
+            i.icon {
+                padding-right: 8px;
+                color: rgba(146, 168, 209, 1);
+            }
+            &:hover {
+                color: #fff;
+                background: rgba(255, 255, 255, .3);
+                box-shadow: inset 0px 1px 0px rgba(0, 0, 0, .1);
+            }
+        }
+        input {
+            display: none;
+            &:checked~span.title {
+                position: absolute;
+                display: block;
+                z-index: 3;
+                top: 0px;
+                font-size: 12px;
+                background: #fff;
+                border-top: 0px;
+                box-shadow: none;
+                color: inherit;
+                width: 100%;
+            }
+            &:disabled {
+                &~span.title {
+                    background: #f9f9f9!important;
+                    color: #aaa;
+                    &:hover {
+                        color: #aaa;
+                        background: none;
+                        cursor: no-drop;
+                    }
+                }
+            }
+        }
+    }
+} // Pure css select 2 TOGGLE
+.select2 {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    width: 330px;
+    height: 100%;
+    border-bottom: 0px;
+    border-radius: 3px;
+    font-size: 12px;
+    box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, .5);
+    i.toggle {
+        position: absolute;
+        z-index: 4;
+        right: 1.5em;
+        top: 1.6em;
+        color: #ccc
+    }
+    .title,
+    .placeholder {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 1.5em 2em;
+        background: rgba(255, 255, 255, 1);
+        border-top: 1px solid rgba(0, 0, 0, .05);
+        cursor: pointer;
+    }
+    &>label>input {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        display: block;
+        opacity: 0;
+        cursor: pointer;
+        &:checked {
+            z-index: 2;
+            ~i.toggle.icon-plus {
+                display: none;
+            }
+            ~i.toggle.icon-minus {
+                display: block;
+            }
+        }
+        &:not(:checked) {
+            ~i.toggle.icon-minus {
+                display: none;
+            }
+            ~i.toggle.icon-plus {
+                display: block;
+            }
+            ~label.option input:not(:checked)~.title {
+                display: none!important;
+            }
+        }
+        &:disabled {
+            cursor: no-drop;
+        }
+    }
+    & label>span.placeholder {
+        position: relative;
+        z-index: 0;
+        display: inline-block;
+        width: 100%;
+        color: #999;
+        border-top: 0px;
+    }
+    label.option {
+        display: block;
+        overflow: hidden;
+        z-index: 1;
+        width: 100%;
+        transition: all 1s ease-out;
+        span.title {
+            position: relative;
+            z-index: 2;
+            transition: background .3s ease-out;
+            i.icon {
+                padding-right: 8px;
+                color: rgba(146, 168, 209, 1);
+            }
+            &:hover {
+                color: #fff;
+                background: rgba(146, 168, 209, .5);
+                box-shadow: inset 0px 1px 0px rgba(0, 0, 0, .1);
+            }
+        }
+        input {
+            display: none;
+            &:checked~span.title {
+                position: absolute;
+                display: block;
+                z-index: 1;
+                top: 0px;
+                font-size: 12px;
+                background: #fff;
+                border-top: 0px;
+                box-shadow: none;
+                color: inherit;
+                width: 100%;
+            }
+            &:disabled {
+                &~span.title {
+                    background: #f9f9f9!important;
+                    color: #aaa;
+                    &:hover {
+                        color: #aaa;
+                        background: none;
+                        cursor: no-drop;
+                    }
+                }
+            }
+        }
+    }
+}
